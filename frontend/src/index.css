@@ -1,0 +1,33 @@
+main {
+  min-height: 80vh;
+}
+h3 {
+  padding: 1rem 0;
+}
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+#inActiveRow {
+  color: red;
+}
+
+body,
+.modal-background {
+  background: #bfc0c0;
+}
+.bg-dark {
+  background-color: #364f6b !important;
+}
+.table {
+  color: #273b52 !important;
+}
+.logo{
+  width : 70px ; 
+  height : 70px ;
+}

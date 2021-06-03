@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./frontend
+    ports:
+      - 2020:80
+    volumes:
+      - ./frontend:/app
+    restart: always
+  api:
+    build: ./backend
+    ports:
+      - 2001:2001
+    env_file:
+      - ./env.sh
+    volumes:
+      - ./backend:/app
+    restart: always
+  db:
+    image: mongo:4.0-xenial
+    ports:
+      - 27019:27017
+    volumes:
+      - leave:/data/db
+    restart: always
+
+volumes:
+  leave:
