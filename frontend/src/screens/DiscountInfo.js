@@ -19,7 +19,7 @@ const DiscountInfo = ({ info }) => {
                 <div className='col-8 text-primary'> {info.empId} </div>
                 <div className='col-4'>
                   <label htmlFor='' className='font-weight-bolder'>
-                    Employee Name
+                    Employee Nom
                   </label>
                 </div>
                 <div className='col-8 text-primary'> {info.empName} </div>
@@ -44,13 +44,13 @@ const DiscountInfo = ({ info }) => {
               <div className='row'>
                 <div className='col-4'>
                   <label htmlFor='' className='font-weight-bolder'>
-                    Father ID
+                    Pere ID
                   </label>
                 </div>
                 <div className='col-8 text-primary'> {info.fatherName} </div>
                 <div className='col-4'>
                   <label htmlFor='' className='font-weight-bolder'>
-                    Mother Name
+                    Mere Name
                   </label>
                 </div>
                 <div className='col-8 text-primary'> {info.motherName} </div>
@@ -88,7 +88,7 @@ const DiscountInfo = ({ info }) => {
               <div className='row'>
                 <div className='col-4'>
                   <label htmlFor='' className='font-weight-bolder'>
-                    Husband Name
+                  partnaire
                   </label>
                 </div>
                 <div className='col-8 text-primary'>
@@ -101,12 +101,12 @@ const DiscountInfo = ({ info }) => {
           {info.hasChildren && (
             <>
               <h5 className='text-center text-uppercase text-light bg-dark p-3'>
-                Children Info
+               Enfants
               </h5>
               <div className='row'>
                 <div className='col-4'>
                   <label htmlFor='' className='font-weight-bolder'>
-                    Children Name
+                  Noms des Enfants 
                   </label>
                 </div>
                 <div className='col-8 text-primary'>

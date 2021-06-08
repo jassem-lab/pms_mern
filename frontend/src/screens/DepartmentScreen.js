@@ -143,7 +143,7 @@ const DepartmentScreen = () => {
                 <form onSubmit={submitHandler}>
                   <div className='row gy-2'>
                     <div className='form-group'>
-                      <label htmlFor='name'>Department Name</label>
+                      <label htmlFor='name'>Nom du department</label>
                       <input
                         required
                         name='name'
@@ -162,10 +162,10 @@ const DepartmentScreen = () => {
                         data-bs-dismiss='modal'
                         onClick={formCleanHandler}
                       >
-                        Close
+                        fermer
                       </button>
                       <button type='submit' className='btn btn-primary'>
-                        Submit
+                        valider
                       </button>
                     </div>
                   </div>
@@ -184,12 +184,12 @@ const DepartmentScreen = () => {
           data-bs-target='#departmentModal'
         >
           {' '}
-          <FaPlus /> REGISTER NEW DEPARTMENT
+          <FaPlus /> Ajouter nouvelle department
         </button>
       </div>
 
       {successDelete && (
-        <Message variant='success'>Department Deleted Successfully</Message>
+        <Message variant='success'>Department effacée avec succés</Message>
       )}
       {loadingDelete ? (
         <Loader />
@@ -205,11 +205,11 @@ const DepartmentScreen = () => {
           <div className='table-responsive'>
             <table className='table table-sm hover bordered striped caption-top'>
               <caption>
-                {departments && departments.length} records were found
+                {departments && departments.length} records non trouvés
               </caption>
               <thead>
                 <tr>
-                  <th>DATE & TIME</th>
+                  <th>DATE & HEURE</th>
                   <th>DEPARTMENT</th>
                   <th>Action</th>
                 </tr>
@@ -232,14 +232,14 @@ const DepartmentScreen = () => {
                           data-bs-toggle='modal'
                           data-bs-target='#departmentModal'
                         >
-                          <FaEdit /> Edit
+                          <FaEdit /> Modifier
                         </button>
                         {userInfo && userInfo.isAdmin && (
                           <button
                             className='btn btn-danger btn-sm'
                             onClick={() => deleteHandler(dep._id)}
                           >
-                            <FaTrash /> Delete
+                            <FaTrash /> Effacer
                           </button>
                         )}
                       </td>
